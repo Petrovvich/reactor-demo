@@ -1,0 +1,15 @@
+server:
+  port: 8123
+
+spring:
+  r2dbc:
+    url: r2dbc:postgres://localhost/books
+    username: books
+    password: books
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
